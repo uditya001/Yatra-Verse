@@ -139,9 +139,12 @@ npm run dev
 
 | Name | Role |
 |------|------|
-| Your Name | Backend / Matching Engine |
-| Teammate 2 | Frontend |
-| Teammate 3 | Database / Data Collection |
+| Uditya | Frontend / Backend / Matching Engine |
+| Vansh | Frontend / Database |
+| Vedika | Research / Data Collection |
+| Shivani | Frontend / Database |
+| Vanshika | Database / Research |
+
 
 ---
 
