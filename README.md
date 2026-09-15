@@ -1,8 +1,8 @@
-# Yatraverse 🧳
+# Yatra-Verse 🧳
 
 > Real traveler data → Analysis → Similar trips → Personalized, budget-friendly trip plans.
 
-Yatraverse is a data-driven trip planning platform that helps travelers plan trips based on **real experiences of past travelers** — not just generic ratings and blog posts.
+Yatra-Verse is a data-driven trip planning platform that helps travelers plan trips based on **real experiences of past travelers** — not just generic ratings and blog posts.
 
 Instead of guessing your budget or itinerary, you enter your trip details (group size, destination, duration, budget) and Yatraverse finds **similar real trips** taken by others, showing you what they spent, where they stayed, what they visited, and how you can recreate a similar experience within your own budget.
 
@@ -23,7 +23,7 @@ This process is scattered, time-consuming, and often based on unreliable or outd
 
 ## 💡 The Solution
 
-Yatraverse lets travelers upload their **completed trips** with full cost breakdowns and experiences. When a new user plans a trip, the platform matches their requirements against this real trip data and recommends the most relevant, realistic plans.
+Yatra-Verse lets travelers upload their **completed trips** with full cost breakdowns and experiences. When a new user plans a trip, the platform matches their requirements against this real trip data and recommends the most relevant, realistic plans.
 
 ### Example
 
