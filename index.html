@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Yatra-Verse - Plan your trip using real traveler experiences.">
+
+    <title>Yatra-Verse | Travel From Experience</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <a href="#" class="logo">
+        <img src="images/logo.png" alt="Yatra-Verse">
+    </a>
+
+
+    <nav class="nav-links">
+
+        <a href="#home" class="active">Home</a>
+
+        <a href="#explore">Explore Trips</a>
+
+        <a href="#how-it-works">How It Works</a>
+
+        <a href="#about">About</a>
+
+    </nav>
+
+
+    <button class="login-btn">
+        Login
+    </button>
+
+
+    <!-- Mobile Menu Button -->
+
+    <button class="menu-btn" id="menuBtn">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </button>
+
+</header>
+
+
+
+<!-- ================= HERO ================= -->
+
+<main>
+
+<section class="hero" id="home">
+
+
+    <!-- Background Overlay -->
+
+    <div class="hero-overlay"></div>
+
+
+    <!-- Decorative floating particles -->
+
+    <div class="particles">
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+
+    <!-- Animated flight path -->
+
+    <div class="flight-path">
+
+        <svg viewBox="0 0 500 250">
+
+            <path
+                d="M20 210 C120 30, 300 260, 470 40"
+            />
+
+        </svg>
+
+        <div class="plane">
+            ✈
+        </div>
+
+    </div>
+
+
+    <!-- Floating destination -->
+
+    <div class="destination-card card-manali">
+
+        <img
+            src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=500&q=80"
+            alt="Manali"
+        >
+
+        <div class="destination-info">
+
+            <span>📍</span>
+
+            <strong>Manali</strong>
+
+        </div>
+
+    </div>
+
+
+    <div class="destination-card card-goa">
+
+        <img
+            src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=500&q=80"
+            alt="Goa"
+        >
+
+        <div class="destination-info">
+
+            <span>📍</span>
+
+            <strong>Goa</strong>
+
+        </div>
+
+    </div>
+
+
+    <div class="destination-card card-agra">
+
+        <img
+            src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=500&q=80"
+            alt="Agra"
+        >
+
+        <div class="destination-info">
+
+            <span>📍</span>
+
+            <strong>Agra</strong>
+
+        </div>
+
+    </div>
+
+
+    <!-- Hero Content -->
+
+    <div class="hero-content">
+
+
+        <div class="hero-badge">
+
+            <span class="badge-dot"></span>
+
+            REAL TRIPS • REAL DATA • BETTER JOURNEYS
+
+        </div>
+
+
+        <h1>
+
+            Plan Your Trip
+
+            <br>
+
+            Like a
+
+            <span>Real Traveler.</span>
+
+        </h1>
+
+
+        <p class="hero-description">
+
+            Discover how real travelers travelled,
+            what they spent, where they stayed,
+            and how you can recreate a similar
+            journey within your budget.
+
+        </p>
+
+
+        <!-- Trip Planner -->
+
+        <div class="trip-planner">
+
+
+            <div class="planner-title">
+
+                <span class="plane-icon">✈</span>
+
+                <strong>Plan a Trip</strong>
+
+            </div>
+
+
+            <div class="planner-fields">
+
+
+                <!-- Destination -->
+
+                <div class="field">
+
+                    <label>
+                        Destination
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <span>📍</span>
+
+                        <input
+                            type="text"
+                            id="destination"
+                            placeholder="e.g. Manali"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- Travelers -->
+
+                <div class="field">
+
+                    <label>
+                        Travelers
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <span>👥</span>
+
+                        <input
+                            type="number"
+                            id="travelers"
+                            placeholder="3"
+                            min="1"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- Days -->
+
+                <div class="field">
+
+                    <label>
+                        Days
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <span>📅</span>
+
+                        <input
+                            type="number"
+                            id="days"
+                            placeholder="4"
+                            min="1"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- Budget -->
+
+                <div class="field">
+
+                    <label>
+                        Budget / Person
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <span>₹</span>
+
+                        <input
+                            type="number"
+                            id="budget"
+                            placeholder="8000"
+                            min="0"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <button
+                class="search-btn"
+                id="planTrip"
+            >
+
+                <span>⌕</span>
+
+                Find Similar Trips
+
+                <span>→</span>
+
+            </button>
+
+
+            <div
+                class="planner-result"
+                id="result"
+            ></div>
+
+        </div>
+
+
+        <!-- Trust text -->
+
+        <div class="trust-row">
+
+            <div class="avatars">
+
+                <span>👨🏻</span>
+                <span>👩🏻</span>
+                <span>👨🏽</span>
+                <span>👩🏽</span>
+
+            </div>
+
+            <p>
+                Built around experiences from
+                <strong>real travelers</strong>
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Scroll -->
+
+    <div class="scroll-indicator">
+
+        <span>Scroll to explore</span>
+
+        <div class="scroll-line"></div>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ================= EXPERIENCE SECTION ================= -->
+
+<section class="experience" id="explore">
+
+
+    <div class="section-heading">
+
+        <span>WHY YATRA-VERSE?</span>
+
+        <h2>
+
+            Don't just plan a trip.
+
+            <em>Plan from experience.</em>
+
+        </h2>
+
+        <p>
+
+            We turn real travel experiences into
+            useful information for your next journey.
+
+        </p>
+
+    </div>
+
+
+    <div class="feature-grid">
+
+
+        <article class="feature-card">
+
+            <div class="feature-number">
+                01
+            </div>
+
+            <div class="feature-icon">
+                📊
+            </div>
+
+            <h3>
+                Real Traveler Data
+            </h3>
+
+            <p>
+
+                Explore actual trips shared by travelers,
+                including routes, stays, expenses,
+                food and activities.
+
+            </p>
+
+        </article>
+
+
+        <article class="feature-card">
+
+            <div class="feature-number">
+                02
+            </div>
+
+            <div class="feature-icon">
+                💰
+            </div>
+
+            <h3>
+                Realistic Budgets
+            </h3>
+
+            <p>
+
+                See what travelers actually spent
+                instead of depending only on package
+                prices and estimates.
+
+            </p>
+
+        </article>
+
+
+        <article class="feature-card">
+
+            <div class="feature-number">
+                03
+            </div>
+
+            <div class="feature-icon">
+                🧠
+            </div>
+
+            <h3>
+                Smart Trip Planning
+            </h3>
+
+            <p>
+
+                Find trips similar to yours and
+                create a personalized plan based
+                on your budget.
+
+            </p>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= HOW IT WORKS ================= -->
+
+<section class="how-it-works" id="how-it-works">
+
+
+    <div class="section-heading">
+
+        <span>HOW IT WORKS</span>
+
+        <h2>
+
+            From real trips
+
+            <em>to your journey.</em>
+
+        </h2>
+
+    </div>
+
+
+    <div class="steps">
+
+
+        <div class="step">
+
+            <div class="step-circle">
+                01
+            </div>
+
+            <h3>
+                Tell Us Your Plan
+            </h3>
+
+            <p>
+
+                Enter your destination,
+                travelers, duration and budget.
+
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <div class="step-circle">
+                02
+            </div>
+
+            <h3>
+                Find Similar Trips
+            </h3>
+
+            <p>
+
+                Our system searches through
+                previous traveler experiences.
+
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <div class="step-circle">
+                03
+            </div>
+
+            <h3>
+                Build Your Journey
+            </h3>
+
+            <p>
+
+                Get realistic expenses and
+                a personalized itinerary.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer id="about">
+
+    <div class="footer-logo">
+
+        <img
+            src="images/logo.png"
+            alt="Yatra-Verse"
+        >
+
+        <p>
+            Travel smarter.
+            Travel from experience.
+        </p>
+
+    </div>
+
+
+    <div class="footer-links">
+
+        <a href="#home">Home</a>
+
+        <a href="#explore">Explore</a>
+
+        <a href="#how-it-works">How It Works</a>
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 Yatra-Verse
+
+    </div>
+
+</footer>
+
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
