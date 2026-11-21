@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Plan smarter with Yatra-Verse using demo traveller trip records and budgets.">
+  <title>Yatra-Verse | Travel from Experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">Y</span><span>Yatra<span class="brand-red">-Verse</span><small>TRAVEL FROM EXPERIENCE</small></span></a>
+<button class="menu-toggle" aria-label="Toggle navigation">☰</button><nav class="nav"><a class="active" href="index.html">Home</a><a href="trips.html">Explore Trips</a><a href="budget.html">Budget Planner</a><a href="submit-trip.html">Share a Trip</a><a href="dashboard.html">Dashboard</a></nav><a class="btn btn-small" href="login.html">Login</a></header>
+<main>
+<section class="hero">
+ <div class="hero-shade"></div><div class="hero-content">
+  <span class="eyebrow light">REAL TRIPS · DEMO DATA · BETTER JOURNEYS</span>
+  <h1>Plan your trip like a <em>real traveler.</em></h1>
+  <p>Explore sample travel experiences, compare expenses and build a journey that respects your budget.</p>
+  <form class="planner-panel" id="home-search">
+   <label>Destination<input id="home-destination" placeholder="e.g. Manali" required></label>
+   <label>Travelers<input id="home-travelers" type="number" min="1" value="2" required></label>
+   <label>Days<input id="home-days" type="number" min="1" value="4" required></label>
+   <label>Budget / person (₹)<input id="home-budget" type="number" min="0" value="8000" required></label>
+   <button class="btn" type="submit">Find similar trips →</button>
+  </form>
+  <p class="demo-note">This student project currently uses illustrative demo records, not verified live traveler submissions.</p>
+ </div>
+</section>
+<section class="section soft" id="why"><div class="section-head"><span class="eyebrow">WHY YATRA-VERSE?</span><h2>Don't just plan a trip.<br><em>Plan from experience.</em></h2><p>We organise trip details into practical information: routes, duration, stays and spending.</p></div>
+ <div class="feature-grid"><article class="feature"><div class="feature-icon">🧳</div><h3>Trip experiences</h3><p>Browse sample itineraries and details from different destinations.</p></article><article class="feature"><div class="feature-icon">₹</div><h3>Expense clarity</h3><p>Understand transport, stay, food and activity costs before travelling.</p></article><article class="feature"><div class="feature-icon">🧭</div><h3>Budget matching</h3><p>Compare your budget per person with similar trip records.</p></article></div>
+</section>
+<section class="section"><div class="section-head"><span class="eyebrow">POPULAR EXPERIENCES</span><h2>Get inspired for your next <em>journey.</em></h2></div><div class="trip-grid" id="featured-trips"></div><div class="center"><a class="btn btn-outline" href="trips.html">Explore all demo trips</a></div></section>
+<section class="cta"><div><span class="eyebrow light">YOUR EXPERIENCE MATTERS</span><h2>Have a trip story to share?</h2><p>Add a sample trip record to the local demo database.</p></div><a class="btn btn-white" href="submit-trip.html">Share your trip →</a></section>
+</main>
+<footer class="footer"><a class="brand brand-footer" href="index.html"><span class="brand-mark">Y</span><span>Yatra<span class="brand-red">-Verse</span><small>TRAVEL FROM EXPERIENCE</small></span></a><div><a href="trips.html">Explore</a><a href="budget.html">Budget planner</a><a href="submit-trip.html">Share trip</a></div><p>© 2026 Yatra-Verse · Academic frontend demo</p></footer>
+<script src="js/app.js"></script>
+</body></html>
